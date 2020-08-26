@@ -1,10 +1,11 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-    "occupation": "Fry Cook",
-    "location": "A Pineapple Under the Sea"
+    "name": "Eugene Lewis",
+    "image": "https://randomuser.me/api/portraits/men/64.jpg",
+    "phone": "(243)-380-2827",
+    "email": "eugene.lewis@example.com",
+    "dob": "12/3/1986"
   },
   {
     "id": 2,
