@@ -23,17 +23,37 @@ class App extends Component {
     return (
       <Wrapper>
         <Title></Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
+        <table className="container">
+          <thead className="row">
+            <th className="col-md-2 col-md-offset-1">Image</th>
+            <th className="col-md-2">Name</th>
+            <th className="col-md-2">Phone</th>
+            <th className="col-md-3">Email</th>
+            <th className="col-md-2">DOB</th>
+          </thead>
+
+          <tbody>
+            {this.state.friends.map(friend => (
+          //<FriendCard
             // removeFriend={this.removeFriend}
-            id={friend.id}
+            /*id={friend.id}
             key={friend.id}
             name={friend.name}
             image={friend.image}
             occupation={friend.occupation}
-            location={friend.location}
-          />
+            location={friend.location}*/
+
+            <tr className="row"> 
+              <td className="col-md-2 col-md-offset-1"><img src={friend.image} alt="employee image" className="img-responsive"></img></td>
+            <td className="col-md-2"><h4>{friend.name}</h4></td>
+            <td className="col-md-2"><h4>{friend.phone}</h4></td>
+            <td className="col-md-3"><h4>{friend.email}</h4></td>
+            <td className="col-md-2"><h4>{friend.dob}</h4></td>
+          </tr>
         ))}
+          </tbody>
+        </table>
+        
       </Wrapper>
     );
   }
