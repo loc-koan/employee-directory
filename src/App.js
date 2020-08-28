@@ -23,6 +23,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Title></Title>
+
         <table className="container">
           <thead className="row">
             <th className="col-md-2 col-md-offset-1">Image</th>
@@ -34,23 +35,14 @@ class App extends Component {
 
           <tbody>
             {this.state.friends.map(friend => (
-          //<FriendCard
-            // removeFriend={this.removeFriend}
-            /*id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}*/
-
-            <tr className="row"> 
-              <td className="col-md-2 col-md-offset-1"><img src={friend.image} alt="employee image" className="img-responsive"></img></td>
-            <td className="col-md-2"><h4>{friend.name}</h4></td>
-            <td className="col-md-2"><h4>{friend.phone}</h4></td>
-            <td className="col-md-3"><h4>{friend.email}</h4></td>
-            <td className="col-md-2"><h4>{friend.dob}</h4></td>
-          </tr>
-        ))}
+              <tr className="row"> 
+                <td className="col-md-2 col-md-offset-1"><img src={friend.image} alt="employee image" className="img-responsive"></img></td>
+                <td className="col-md-2"><h5>{friend.name}</h5></td>
+                <td className="col-md-2"><h5>{friend.phone}</h5></td>
+                <td className="col-md-3"><h5>{friend.email}</h5></td>
+                <td className="col-md-2"><h5>{friend.dob}</h5></td>
+              </tr>
+            ))}
           </tbody>
         </table>
         
