@@ -1,4 +1,14 @@
 .form-group {
-    margin: "center";
-    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+.submitButton {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;  
 }
