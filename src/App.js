@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+// import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import SearchForm from "./components/SearchForm";
-// import Instructions from "./components/Title";
+// import Table from "./components/Table";
 import friends from "./friends.json";
 
 class App extends Component {
@@ -26,6 +26,8 @@ class App extends Component {
         <Title></Title>
 
         <SearchForm></SearchForm>
+
+        {/* <Table></Table> */}
 
         <table className="container">
           <thead className="row">
