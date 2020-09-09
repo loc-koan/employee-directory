@@ -1,50 +1,80 @@
 import React, { Component } from "react";
+import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import SearchForm from "./components/SearchForm";
-import Table from "./components/Table";
-import axios from "axios"; /* ask TA why this is not capitalized */
+// import Table from "./components/Table";
+import friends from "./friends.json";
+// import { fontAwesomeIcon } from './components/FontAwesomeIcons'
 
 class App extends Component {
+  // Setting this.state.friends to the friends json array
   state = {
-    personnel: [],
-    search: ""
+    friends,
+    order: "desc",
+    sortFriends: [{}]
   };
 
-  componentDidMount() {
-    this.getPersonnel();
-  }
+  // headings = [
+  //   {name: "Name" }
+  // ]
 
-  getPersonnel = () => {
-    const URL = "https://randomuser.me/api/?results=10&inc=picture,name,phone,email,dob";
-        axios.get(URL)
-        .then((res) => {
-            this.setState({ 
-                personnel: res.data.results 
-            });
-        }).catch(err => console.log(err));
+  // handleSort = head => {
+  //   console.log("Inside Handle Sort");
+
+  //   if(this.state.order === "desc"){
+  //     this.setState({
+  //       order: "asc"
+  //     })
+  //   }
+  //   else{
+  //     this.setState({
+  //       order: "desc"
+  //     })
+  //   }
+  //   }
+  // }
+
+  removeFriend = id => {
+    // Filter this.state.friends for friends with an id not equal to the id being removed
+    const friends = this.state.friends.filter(friend => friend.id !== id);
+    // Set this.state.friends equal to the new friends array
+    this.setState({ friends });
   };
 
-  handleInputChange = event => {
-    const value = event.target.value;
-    const name = event.target.name;
-    this.setState({
-      [name]: value
-    });
-  };
-
-  // When the form is submitted, search the OMDB API for the value of `this.state.search`
-  handleFormSubmit = event => {
-    event.preventDefault();
-    this.searchMovies(this.state.search);
-  };
-
+  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
         <Title></Title>
+
         <SearchForm></SearchForm>
-        <Table></Table>
+
+        {/* <Table></Table> */}
+
+        <table className="container">
+          <thead className="row">
+            <th className="col-md-2 col-md-offset-1">Image</th>
+            <th className="col-md-2">Name <button id="sort-asc" onClick={this.handleSort}><i class="fas fa-angle-down"></i></button></th>
+            {/* <fontAwesomeIcon icon="fa-caret-up"> */}
+            <th className="col-md-2">Phone</th>
+            <th className="col-md-3">Email</th>
+            <th className="col-md-2">DOB</th>
+          </thead>
+
+          <tbody>
+            {this.state.friends.map(friend => (
+              <tr className="row"> 
+                <td className="col-md-2 col-md-offset-1"><img src={friend.image} alt="employee image" className="img-responsive"></img></td>
+                <td className="col-md-2"><h5>{friend.name}</h5></td>
+                <td className="col-md-2"><h5>{friend.phone}</h5></td>
+                <td className="col-md-3"><h5>{friend.email}</h5></td>
+                <td className="col-md-2"><h5>{friend.dob}</h5></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        
       </Wrapper>
     );
   }

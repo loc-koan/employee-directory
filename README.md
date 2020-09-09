@@ -1,53 +1,48 @@
-# Unit 19 React Homework: Employee Directory
+## Employee Directory
 
-## Overview
+## Description
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+This application uses React to keep track of employees in your company.  It has their image, name, phone number, email and their date of birth.  The employees can be sorted alphabetically or can be searched thru the search bar.  
 
-## User Story
+## Live:
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+- [Live](https://loc-koan.github.io/employee-directory/)
 
-## Business Context
+## Key Features:
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+- React
+- Create React App
+- Components
+- JSX
+- JSX variables
+- Props
 
-## Acceptance Criteria
+## Links:
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+- [GitHub](https://github.com/loc-koan/employee-directoryr)
+- [Live](https://loc-koan.github.io/employee-directory/)
 
-The user should be able to:
+## Installation
 
-  * Sort the table by at least one category
+- Clone the repository at [GitHub](https://github.com/loc-koan/employee-directoryr) to view its code
+- Visit [Live](https://loc-koan.github.io/employee-directory/) to see live application
 
-  * Filter the users by at least one property.
+## Credits
 
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-* Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
-
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/Tutorials)
+- [W3Schools](https://www.w3schools.com/)
+- [NodeJS](https://nodejs.org/docs/latest-v12.x/api/)
+- [ExpressJS](https://expressjs.com/en/starter/hello-world.html)
+- [Code Like This](https://codelikethis.com/lessons/react/fetching-data)
+- [CodePen](https://codepen.io/pen?&editable=true&editors=0010)
+- [Digital Ocean](https://www.digitalocean.com/community/tutorials/react-axios-react)
+- [Medium](https://medium.com/javascript-in-plain-english/what-is-axios-and-how-to-use-it-with-react-1470d19e1b83)
+- [Why did we build React?](https://reactjs.org/blog/2013/06/05/why-react.html)
+- [React.js](https://reactjs.org/)
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Babel](https://babeljs.io/docs/en/)
+- [webpack](https://webpack.js.org/)
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Components and Props](https://reactjs.org/docs/components-and-props.html#es6-classes)
+- [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
