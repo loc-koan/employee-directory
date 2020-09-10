@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Table from "./Table";
 import SearchNav from "./SearchNav";
-import API from "./utils/API";
+import API from "../utils/API";
 
 export default class TableInfo extends Component {
   state = {
@@ -15,7 +15,7 @@ export default class TableInfo extends Component {
     { name: "Name", width: "10%" },
     { name: "Phone", width: "20%" },
     { name: "Email", width: "20%" },
-    { name: "DOB", width: "10%" }
+    { name: "DOB", width: "20%" }
   ]
 
   handleSort = heading => {
@@ -77,7 +77,7 @@ export default class TableInfo extends Component {
   }
 
   componentDidMount() {
-    API.getUsers().then(results => {
+    API.getEmployees().then(results => {
       this.setState({
         users: results.data.results,
         filteredUsers: results.data.results

@@ -46,4 +46,4 @@ This application uses React to keep track of employees in your company.  It has 
 - [Components and Props](https://reactjs.org/docs/components-and-props.html#es6-classes)
 - [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [gh-pages](https://www.npmjs.com/package/gh-pages)
-- [UT Bootcamp](https://github.com/the-Coding-Boot-Camp-at-UT/UT-HOU-FSF-PT-03-2020-U-C/tree/master/01-class-content/19-React/02-Homework)
+- [UT Bootcamp](https://github.com/the-Coding-Boot-Camp-at-UT/UT-HOU-FSF-PT-03-2020-U-C/tree/master/01-class-content/19-React/02-Homework) - majority
