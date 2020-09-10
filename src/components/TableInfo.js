@@ -78,10 +78,12 @@ export default class TableInfo extends Component {
 
   componentDidMount() {
     API.getEmployees().then(results => {
+      console.log("Result Data: "+JSON.stringify(results));
       this.setState({
         users: results.data.results,
         filteredUsers: results.data.results
       });
+
     });
   }
 

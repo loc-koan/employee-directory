@@ -5,7 +5,7 @@ function SearchForm({ handleSearchChange }) {
   return (
     <div className="container row">
       <form>
-        <div className="form-group col-md-10">
+        <div className="form-group col-xl-12">
           <input
             onChange={e => handleSearchChange(e)}
             // value={props.value}

@@ -6,7 +6,7 @@ function Title(props) {
     <div className="container">
       <div className="titleBackground">
         <h1 className="title">Employee Directory</h1>
-        <p className="instructions">Click on controls to filter by heading or use the search box to narrow your results</p>
+        <p className="instructions">Click on name to filter alphabetically or use the search box to narrow your results</p>
       </div>
     </div>
   );
