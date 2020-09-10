@@ -6,10 +6,8 @@ import axios from "axios";
 // https://randomuser.me/api/?inc=gender,name,nat
 // https://randomuser.me/api/?results=10&inc=name,phone,email,dob
 
-// export default {
-//   search: function(query) {
-//     return axios.get(BASEURL + query + APIKEY);
-//   }
-// };
-
-/* not doing searches, pulls once and kept; examples all place axios inside app.js file */
+export default {
+  getEmployees: function(query) {
+    return axios.get("https://randomuser.me/api/?results=10&nat=us");
+  }
+};
