@@ -1,6 +1,5 @@
 import React from "react";
-// import friends from "../../../friends.json";
-// import "./style.css";
+import TableBody from "./TableBody";
 
 function Table({ headings, users, handleSort }) {
   return (
