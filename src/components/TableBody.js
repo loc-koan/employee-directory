@@ -50,4 +50,4 @@ function TableBody({ users }) {
 
 }
 
-export default DataBody;
+export default TableBody;
